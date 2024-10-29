@@ -1,0 +1,21 @@
+HABANA_VISIBLE_DEVICES=1 python3 run_lora_clm.py\
+                --model_name_or_path meta-llama/Meta-Llama-3-8B \
+                --dataset_name timdettmers/openassistant-guanaco \
+                --bf16 True \
+                --output_dir ./model_lora_llama \
+                --num_train_epochs 0.1 \
+                --max_seq_len 512 \
+                --per_device_train_batch_size 1 \
+                --save_strategy no \
+                --learning_rate 2e-5 \
+                --warmup_ratio 0.03 \
+                --lr_scheduler_type "cosine" \
+                --logging_steps 1 \
+                --dataset_concatenation \
+                --attn_softmax_bf16 True \
+                --do_train \
+                --use_habana \
+                --use_flash_attention \
+                --report_to none \
+                --throughput_warmup_steps 1\
+                --drop_rate 0.875
