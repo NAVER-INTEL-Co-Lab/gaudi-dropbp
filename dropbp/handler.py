@@ -73,8 +73,8 @@ class DropBPHandler:
                     current_avg_drop_rate = current_avg_drop_rate = (n_dropped_attn+n_dropped_ffn) / (self.num_layers)
         self.set_diverse_drop_rate(dropped_layers, print_log=False)
 
-    def compute_gradient(self, backprop, gradnorm=True):
-        setup_seed(526)
+    def compute_gradient(self, backprop, gradnorm=True, seed=526):
+        setup_seed(seed)
         backprop()
         grad = []
         for p in self.model.parameters():
