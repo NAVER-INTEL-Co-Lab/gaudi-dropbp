@@ -1,5 +1,5 @@
 # DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation
-This is the official repository for [DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation](https://openreview.net/forum?id=x4EoTQW7ka&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2024%2FConference%2FAuthors%23your-submissions)) accepted in Neurips2024.
+This is the official repository for [DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation](https://openreview.net/forum?id=x4EoTQW7ka&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2024%2FConference%2FAuthors%23your-submissions)) using Gaudi-v2 accepted in Neurips2024.
 
 ## Abstract
 <div align="center">
